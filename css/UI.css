@@ -1,0 +1,215 @@
+*{
+  user-select: none;
+}
+body {
+
+  background-image: url('/assest/gamebg.jpg');
+  width: 100%;
+  margin-left: 10px;
+  box-sizing: content-box;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Arrange elements vertically */
+  justify-content: flex-start; /* Align header to the top */
+  align-items: center; /* Center the content horizontally */
+  height: 100vh;
+
+overflow: hidden;
+}
+nav{
+  margin-top: 50px;
+  display: flex;
+  gap: 100px;
+  justify-content:space-evenly;
+  float: left; /* Move the nav element to the left */
+  justify-content: flex-end; /* Align items to the right end */
+
+}
+nav ul {
+  justify-content: end;
+}
+.hole-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: #bdcaae; */
+  background-image: url('/assest/bg.jpg');
+  margin: 100px auto;
+  filter: drop-shadow(10px, 10px, 10px rgb(31, 54, 31)n);
+  box-shadow: 1px 1px 20px 5px #c88e0a;
+
+}
+
+.hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(248, 231, 231, 0.5);
+}
+
+.animal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  text-align: center;
+  height: 100px;
+  width: 100%;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+
+
+}
+
+.game {
+  /* Set a fixed width and height */
+  width: 300px;
+  height: 600px;
+  /* background-image: url('/assest/bg.jpg');  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px 40px; /* Optional: Add rounded corners */
+}
+
+.animal {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-left: 4px;
+  transition: ease-in-out 0.5s;
+
+
+
+}
+.animal:hover{
+  transform: scale(1.2);
+}
+
+.bot {
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: #e2d59a;
+}
+
+.points-display {
+  user-select: none;
+}
+
+.coins-display {
+  user-select: none;
+}
+
+.main {
+  /* Center the game section horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Set a fixed width and height */
+  width: 800px;
+  height: 600px;
+  /* background-image: url('/assest/bg.jpg'); */
+  /* Optional: Add background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px 40px;
+  /* Optional: Add rounded corners */
+}
+
+.game-title {
+  margin: 0;
+  /* Remove default margins */
+}
+
+#gameh1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: rgb(252, 255, 236);
+  /* margin-top: 100px;
+  margin-left: 30px; */
+  font-weight: bolder;
+  text-align: center;
+  animation: blink 0.5 infinite;
+  user-select: none;
+
+
+}
+#gameh1:hover{
+  transition: ease-in-out 0.5;
+  transform: scale(1.1);
+
+}
+.head {
+  /* ... your existing styles */
+  /* Position the header at the top */
+  position: sticky;
+  top: 0;
+  background-color: #f7d6d628; /* Optional: Add a background color for the header */
+  padding: 10px; /* Optional: Add padding for spacing */
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100;
+  }
+  50% {
+    opacity: -10;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+#name{
+  position: absolute;
+  background-color: rgb(240, 248, 255);
+  color: black;
+  z-index: 111;
+  user-select: none;
+  
+}
+li{
+  list-style: none;
+  display: inline;
+  
+}
+li a{
+  gap: 60px;
+  text-align: center;
+  color: rgb(22, 27, 26);
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 20px;
+}
+.redeem-button {
+  color: #fff; /* Change the link color to white */
+  background-color: #187559; /* Set a background color */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border-radius: 5px; /* Add rounded corners */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to a hand pointer */
+}
